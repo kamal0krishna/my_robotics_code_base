@@ -1,0 +1,6 @@
+<launch>
+
+    <node pkg = "vosk_custom_nodes" type = "speech_cmnd_recognition.py" name="speech2cmd_cvt" output="screen"></node>
+    <node name="vocal_commands" pkg="vosk_custom_nodes" type="vosk_stt.py" output="screen">
+    </node>
+</launch>
